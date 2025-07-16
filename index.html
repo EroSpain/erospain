@@ -1,184 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>EroSpain Cocktail 2025</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: #000;
-    }
-
-    .carousel {
-      position: relative;
-      max-width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .carousel-images {
-      display: flex;
-      transition: transform 0.5s ease;
-      width: 100%;
-    }
-
-    .carousel-images img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      flex-shrink: 0;
-    }
-
-    .prev, .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(255,255,255,0.4);
-      color: #000;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      font-size: 18px;
-      z-index: 1;
-    }
-
-    .prev { left: 10px; }
-    .next { right: 10px; }
-
-    .prev:hover, .next:hover {
-      background: rgba(255,255,255,0.8);
-    }
-  </style>
+  <title>Carrusel Imágenes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="carousel">
-  <div class="carousel-images" id="carousel">
-<img src="https://i.imgur.com/HJVHnxq.jpeg" alt="1">
-<img src="https://i.imgur.com/3EdLJbK.jpeg" alt="2">
-<img src="https://i.imgur.com/mKhgSHh.jpeg" alt="3">
-<img src="https://i.imgur.com/B0fcolu.jpeg" alt="4">
-<img src="https://i.imgur.com/cxNlPIY.jpeg" alt="5">
-<img src="https://i.imgur.com/FyyNvf7.jpeg" alt="6">
-<img src="https://i.imgur.com/G54cZ8K.jpeg" alt="7">
-<img src="https://i.imgur.com/g6bcfvO.jpeg" alt="8">
-<img src="https://i.imgur.com/LGvcWyo.jpeg" alt="9">
-<img src="https://i.imgur.com/GMiXoIc.jpeg" alt="10">
-<img src="https://i.imgur.com/ftnnFY9.jpeg" alt="11">
-<img src="https://i.imgur.com/OS4o8wK.jpeg" alt="12">
-<img src="https://i.imgur.com/cJwUGqx.jpeg" alt="13">
-<img src="https://i.imgur.com/1ocrQ3q.jpeg" alt="14">
-<img src="https://i.imgur.com/aTRf3L5.jpeg" alt="15">
-<img src="https://i.imgur.com/Uya9g0Q.jpeg" alt="16">
-<img src="https://i.imgur.com/4xnwpJu.jpeg" alt="17">
-<img src="https://i.imgur.com/8YuYvuZ.jpeg" alt="18">
-<img src="https://i.imgur.com/PUYneZr.jpeg" alt="19">
-<img src="https://i.imgur.com/eOKXbZE.jpeg" alt="20">
-<img src="https://i.imgur.com/RPsMQjB.jpeg" alt="21">
-<img src="https://i.imgur.com/BaVulFg.jpeg" alt="22">
-<img src="https://i.imgur.com/uCIFVL5.jpeg" alt="23">
-<img src="https://i.imgur.com/FNs8I2p.jpeg" alt="24">
-<img src="https://i.imgur.com/rLXu1i8.jpeg" alt="25">
-<img src="https://i.imgur.com/4D3zo2J.jpeg" alt="26">
-<img src="https://i.imgur.com/HcHpCjF.jpeg" alt="27">
-<img src="https://i.imgur.com/xgHaaMw.jpeg" alt="28">
-<img src="https://i.imgur.com/OZtoDt0.jpeg" alt="29">
-<img src="https://i.imgur.com/tsg6Bpv.jpeg" alt="30">
-<img src="https://i.imgur.com/9e6QFDa.jpeg" alt="31">
-<img src="https://i.imgur.com/mY8HeC7.jpeg" alt="32">
-<img src="https://i.imgur.com/uPI5dp4.jpeg" alt="33">
-<img src="https://i.imgur.com/pURgvOt.jpeg" alt="34">
-<img src="https://i.imgur.com/dbR3aAy.jpeg" alt="35">
-<img src="https://i.imgur.com/nQm74ax.jpeg" alt="36">
-<img src="https://i.imgur.com/qgDZs7N.jpeg" alt="37">
-<img src="https://i.imgur.com/HPeWUdq.jpeg" alt="38">
-<img src="https://i.imgur.com/MLSGFKD.jpeg" alt="39">
-<img src="https://i.imgur.com/Uz13Qf3.jpeg" alt="40">
-<img src="https://i.imgur.com/OS0VQe6.jpeg" alt="41">
-<img src="https://i.imgur.com/DSr96YG.jpeg" alt="42">
-<img src="https://i.imgur.com/XhIHFy4.jpeg" alt="43">
-<img src="https://i.imgur.com/bejXfc7.jpeg" alt="44">
-<img src="https://i.imgur.com/iokyccG.jpeg" alt="45">
-<img src="https://i.imgur.com/KEV2vbI.jpeg" alt="46">
-<img src="https://i.imgur.com/2G0akaU.jpeg" alt="47">
-<img src="https://i.imgur.com/dHnEm3x.jpeg" alt="48">
-<img src="https://i.imgur.com/WWtPdoR.jpeg" alt="49">
-<img src="https://i.imgur.com/FRBCzF9.jpeg" alt="50">
-<img src="https://i.imgur.com/NU4NGjW.jpeg" alt="51">
-<img src="https://i.imgur.com/MCy4EKh.jpeg" alt="52">
-<img src="https://i.imgur.com/fWRWfTV.jpeg" alt="53">
-<img src="https://i.imgur.com/KgMgMcP.jpeg" alt="54">
-<img src="https://i.imgur.com/Ts2gz0S.jpeg" alt="55">
-<img src="https://i.imgur.com/WzPYbNa.jpeg" alt="56">
-<img src="https://i.imgur.com/jStyrZP.jpeg" alt="57">
-<img src="https://i.imgur.com/yODKkiO.jpeg" alt="58">
-<img src="https://i.imgur.com/CUtcrOn.jpeg" alt="59">
-<img src="https://i.imgur.com/nZFF57z.jpeg" alt="60">
-<img src="https://i.imgur.com/7fdtBVu.jpeg" alt="61">
-<img src="https://i.imgur.com/NMn2RMJ.jpeg" alt="62">
-<img src="https://i.imgur.com/Avuv6EU.jpeg" alt="63">
-<img src="https://i.imgur.com/0DZqv3b.jpeg" alt="64">
-<img src="https://i.imgur.com/5Xo5nU7.jpeg" alt="65">
-<img src="https://i.imgur.com/Xz0Lbgb.jpeg" alt="66">
-<img src="https://i.imgur.com/Pb0q5RJ.jpeg" alt="67">
-<img src="https://i.imgur.com/rUqowYG.jpeg" alt="68">
-<img src="https://i.imgur.com/ly0TQLu.jpeg" alt="69">
-<img src="https://i.imgur.com/5ZLrI7A.jpeg" alt="70">
-<img src="https://i.imgur.com/96JXpAC.jpeg" alt="71">
-<img src="https://i.imgur.com/MbFZssC.jpeg" alt="72">
-<img src="https://i.imgur.com/L3AiA8G.jpeg" alt="73">
-<img src="https://i.imgur.com/0Y5lR9f.jpeg" alt="74">
-<img src="https://i.imgur.com/DRA0UV5.jpeg" alt="75">
-<img src="https://i.imgur.com/rb5WLB0.jpeg" alt="76">
-<img src="https://i.imgur.com/JKpgRLO.jpeg" alt="77">
-<img src="https://i.imgur.com/HPaA3LV.jpeg" alt="78">
-<img src="https://i.imgur.com/MeWNEkc.jpeg" alt="79">
-<img src="https://i.imgur.com/FZ82LVr.jpeg" alt="80">
-<img src="https://i.imgur.com/lx68dcU.jpeg" alt="81">
-<img src="https://i.imgur.com/d3vmW5P.jpeg" alt="82">
-<img src="https://i.imgur.com/kKLQ7sh.jpeg" alt="83">
-<img src="https://i.imgur.com/kKRLw4h.jpeg" alt="84">
-<img src="https://i.imgur.com/ZfrONxw.jpeg" alt="85">
-<img src="https://i.imgur.com/5g4eXwr.jpeg" alt="86">
-<img src="https://i.imgur.com/RzL2A0r.jpeg" alt="87">
-<img src="https://i.imgur.com/1rkxkiD.jpeg" alt="88">
-<img src="https://i.imgur.com/CyDY1Pl.jpeg" alt="89">
-<img src="https://i.imgur.com/kAjF8u7.jpeg" alt="90">
-<img src="https://i.imgur.com/FRg1Px1.jpeg" alt="91">
-<img src="https://i.imgur.com/7xuwDU5.jpeg" alt="92">
-<img src="https://i.imgur.com/utnAyAI.jpeg" alt="93">
-<img src="https://i.imgur.com/T0g0bGm.jpeg" alt="94">
-<img src="https://i.imgur.com/b5ZpWrz.jpeg" alt="95">
-<img src="https://i.imgur.com/W0IHScu.jpeg" alt="96">
-<img src="https://i.imgur.com/TmPYHkC.jpeg" alt="97">
-<img src="https://i.imgur.com/Hz9ET2q.jpeg" alt="98">
-<img src="https://i.imgur.com/gRzEGRE.jpeg" alt="99">
-<img src="https://i.imgur.com/F6RYOKx.jpeg" alt="100">
-<img src="https://i.imgur.com/b7YdZpU.jpeg" alt="101">
-<img src="https://i.imgur.com/2eBd4hP.jpeg" alt="102">
-<img src="https://i.imgur.com/YrVZJOb.jpeg" alt="103">
-<img src="https://i.imgur.com/ChJYzUc.jpeg" alt="104">
-<img src="https://i.imgur.com/QjZabgp.jpeg" alt="105">
-<img src="https://i.imgur.com/fbVznY4.jpeg" alt="106">
-<img src="https://i.imgur.com/JZdT9Or.jpeg" alt="107">
+<div id="carouselErospain" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <img src="https://i.imgur.com/JZdT9Or.jpeg" class="d-block w-100" alt="1">
+    </div>
+
+    <!-- Agrega más imágenes aquí -->
+    <div class="carousel-item">
+      <img src="https://i.imgur.com/00U6rpH.jpeg" class="d-block w-100" alt="108">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.imgur.com/qaeSNN6.jpeg" class="d-block w-100" alt="109">
+    </div>
+    <!-- ...continúa con el resto -->
+
   </div>
-  <button class="prev" onclick="moveSlide(-1)">❮</button>
-  <button class="next" onclick="moveSlide(1)">❯</button>
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselErospain" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselErospain" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
 </div>
 
-<script>
-  let currentIndex = 0;
-  const carousel = document.getElementById('carousel');
-  const total = carousel.children.length;
-
-  function moveSlide(direction) {
-    currentIndex = (currentIndex + direction + total) % total;
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
