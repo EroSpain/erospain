@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EroSpain Cocktail 2025</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #000;
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease;
+      width: 100%;
+    }
+
+    .carousel-images img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.4);
+      color: #000;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 1;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .prev:hover, .next:hover {
+      background: rgba(255,255,255,0.8);
+    }
+  </style>
+</head>
+<body>
+
+<div class="carousel">
+  <div class="carousel-images" id="carousel">
+    <img src="https://i.imgur.com/JZdT9Or.jpeg" alt="1">
+    <img src="https://i.imgur.com/7vKmdE4.jpeg" alt="2">
+    <img src="https://i.imgur.com/Yug3AhM.jpeg" alt="3">
+    <img src="https://i.imgur.com/NruvYO7.jpeg" alt="4">
+  </div>
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const carousel = document.getElementById('carousel');
+  const total = carousel.children.length;
+
+  function moveSlide(direction) {
+    currentIndex = (currentIndex + direction + total) % total;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+
+</body>
+</html>
