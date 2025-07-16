@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Carrusel Imágenes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Carrusel Imágenes Responsive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Carrusel con altura flexible */
+    .carousel-inner {
+      max-height: 60vh; /* 60% de la altura de la ventana */
+      overflow: hidden;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Mantiene proporción y muestra toda la imagen */
+      /* Para que en móviles no sea demasiado alta */
+      max-height: 60vh;
+    }
+
+    /* Ajustes para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .carousel-inner {
+        max-height: 40vh;
+      }
+      .carousel-item img {
+        max-height: 40vh;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <div id="carouselErospain" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    
+
     <div class="carousel-item active">
-      <img src="https://i.imgur.com/HJVHnxq.jpeg" class="d-block w-100" alt="1">
+      <img src="https://i.imgur.com/HJVHnxq.jpeg" class="d-block w-100" alt="1" />
     </div>
 
-    <!-- Agrega más imágenes aquí -->
-<div class="carousel-item">
-  <img src="https://i.imgur.com/00U6rpH.jpeg" class="d-block w-100" alt="110">
-</div>
-<div class="carousel-item">
-  <img src="https://i.imgur.com/qaeSNN6.jpeg" class="d-block w-100" alt="111">
-</div>
-<div class="carousel-item">
-  <img src="https://i.imgur.com/WiRDb4A.jpeg" class="d-block w-100" alt="112">
-</div>
-    <!-- ...continúa con el resto -->
+    <div class="carousel-item">
+      <img src="https://i.imgur.com/00U6rpH.jpeg" class="d-block w-100" alt="110" />
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.imgur.com/qaeSNN6.jpeg" class="d-block w-100" alt="111" />
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.imgur.com/WiRDb4A.jpeg" class="d-block w-100" alt="112" />
+    </div>
 
   </div>
 
-  <!-- Controles -->
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselErospain" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselErospain" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
   </button>
 </div>
 
